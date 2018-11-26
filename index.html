@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head> 
+	<meta charset="UTF-8">
+	<title>HOME</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<style>
+*{margin:0;padding:0;}
+
+body{font-family:arial;fint-size:15px;line-height:25px;}
+
+#primary_menu{list-style:none;}
+
+
+
+#primary_menu li{float:left;position:relative;z-index:1;}
+
+#primary_menu li a{color:#222;font-weight:bold;text-decoration:none;padding:20px 30px;display:block;
+transition:all 1s;}
+
+#primary_menu li a:hover{background:hsl(0, 100%, 90%);}
+
+img{width:100%;}
+
+#logodiv{width:100px;float:left;10px 0px;text-align:center;}
+
+#menuContainer{width:800px;float:right;margin-right:-220px;}
+
+#logodiv{width:130px;float:left;10px 0px;text-align:center;}
+
+#logodiv img{margin-bottom:-25px;}
+
+.displaySize{width:1170px;margin:auto;}
+
+nav#mainNave{width:100%;background:#f1f1f1;border-bottom:2px solid orange;display:table;position: fixed;
+z-index: 1;margin-top: -30px;}
+
+
+
+#sub_menu{list-style:none;position:absolute;top:65px;background:#B0C4DE;width:270px;left:-10000000px;}
+
+ul#sub_menu li{width:270px;}
+ul#sub_menu li a{}
+ul#sub_menu li a:hover{background:#00a0b1;color:white;}
+#primary_menu li:hover #sub_menu{left:0px;box-shadow:0px 90px 50px #907b5600;}
+
+
+
+#Mahin{list-style:none;position:absolute;top:65px;background:#808080;width:270px;left:-10000000px;}
+
+ul#Mahin li{width:270px;}
+ul#Mahin li a{}
+ul#Mahin li a:hover{background:#BC8F8F;color:white;}
+#primary_menu li:hover #Mahin{left:0px;}
+
+
+
+
+
+#Hello{list-style:none;position:absolute;top:0px;background:#E6E6FA;width:270px;left:-1000000000px;}
+
+ul#Hello li{width:270px;}
+ul#Hello li a{}
+ul#Hello li a:hover{background:#808080;color:white;}
+#sub_menu li:hover #Hello{left:270px;}
+
+
+
+#container{width:100%;margin:30px auto;}
+#container .sliderItems img{height:950px;}
+
+.slider_container{positin:relative;}
+.slider_container .sliderItems{position:absolute;opacity:0;width:1360px;transition:all 1s;top:67px;}
+.slider_container .sliderItems.active{opacity:1;}
+.sliderItems h1{font-size:80px;}
+
+
+
+
+							/*responsibe*/
+
+
+@media only screen and (min-width:380px) and (max-width:868px){
+
+.sliderItems img{width:480px;}
+
+.sliderItems h1{width:380px;font-size:50px;margin-left:10px;}
+
+
+}
+
+@media only screen and (min-width:220px) and (max-width:360px){
+
+.sliderItems img{width:480px;}
+
+.sliderItems h1{width:380px;font-size:50px;margin-left:10px;}
+
+
+}
+
+
+
+@media only screen and (min-width:240px) and (max-width:319px){
+
+.sliderItems img{width:480px;}
+
+.sliderItems h1{width:380px;font-size:50px;margin-left:10px;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:440px) and (max-width:968px){
+
+.sliderItems img{width:968px;}
+
+.sliderItems h1{width:868px;font-size:50px;margin-left:10px;}
+
+
+}
+
+@media only screen and (min-width:520px) and (max-width:860px){
+
+.sliderItems img{width:860px;}
+
+.sliderItems h1{width:760px;font-size:50px;margin-left:10px;}
+
+
+}
+
+
+
+@media only screen and (min-width:440px) and (max-width:519px){
+
+.sliderItems img{width:860px;}
+
+.sliderItems h1{width:760px;font-size:50px;margin-left:10px;}
+
+}
+
+
+
+
+
+
+										/*laskdflajkdsflkhasdhkfasdlhfklhkdfas*/
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:380px) and (max-width:958px){
+
+#mainNave{width:480px;}
+
+#mainNave #primary_menu{margin-left:-618px;}
+
+#mainNave #primary_menu #Hello{margin-left:-270px;margin-top:65px;}
+
+#logodiv img{opacity:0;}
+
+}
+
+@media only screen and (min-width:220px) and (max-width:660px){
+
+#mainNave{width:480px;}
+
+#mainNave #primary_menu{margin-left:-618px;}
+
+#mainNave #primary_menu #Hello{margin-left:-270px;margin-top:65px;}
+
+#logodiv img{opacity:0;}
+
+}
+
+
+
+@media only screen and (min-width:240px) and (max-width:480px){
+
+#mainNave{width:480px;}
+
+#mainNave #primary_menu{margin-left:-618px;}
+
+#mainNave #primary_menu #Hello{margin-left:-270px;margin-top:65px;}
+
+#logodiv img{opacity:0;}
+
+}
+
+
+
+
+
+
+@media only screen and (min-width:480px) and (max-width:968px){
+
+#mainNave{width:568px;}
+
+#mainNave #primary_menu{margin-left:-618px;}
+
+#mainNave #primary_menu #Hello{margin-left:-270px;margin-top:65px;}
+
+#logodiv img{opacity:0;}
+
+}
+
+@media only screen and (min-width:520px) and (max-width:760px){
+
+#mainNave{width:560px;}
+
+#mainNave #primary_menu{margin-left:-618px;}
+
+#mainNave #primary_menu #Hello{margin-left:-270px;margin-top:65px;}
+
+#logodiv img{opacity:0;}
+
+}
+
+
+
+@media only screen and (min-width:440px) and (max-width:580px){
+
+#mainNave{width:480px;}
+
+#mainNave #primary_menu{margin-left:-618px;}
+
+#mainNave #primary_menu #Hello{margin-left:-270px;margin-top:65px;}
+
+#logodiv img{opacity:0;}
+
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<nav id="mainNave">
+	
+<div class="displaySize">
+	<div id="logodiv">
+	
+	<img width="200px" src="580b57fcd9996e24bc43c519.png"/>
+	
+	
+	</div>
+	<menu id="menuContainer">
+	
+	<ul id="primary_menu">
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="#">ABOUT</a>
+		<ul id="sub_menu">
+			<li><a target="blank" href="my Self.html">My Self</a></li>
+			<li><a target="blank" href="Bangladesh.html">Bangladesh</a></li>
+			<li><a href="#">MY FAVARITE MAN</a>
+			
+			<ul id="Hello">
+				
+				<li><a target="blank" href="https://freelancernasim.com/">FREELANCER NASIM</a></li>
+				<li><a target="blank" href="http://aymansadiq.com/">AYMAN SADIQ</a></li>
+				<li><a target="blank" href="https://www.jhankarmahbub.com/">JHANKAR MAHBUB</a></li>
+				<li><a target="blank" href=" https://www.facebook.com/growbig.xyz/">FAKRUL ISLAM</a></li>
+			
+			</ul>
+			</li>
+			
+		</ul>
+		</li>
+		<li><a href="#">BOOK</a>
+	
+		<ul id="Mahin">
+		
+			<li><a target="blank" href="http://konnect.edu.bd/">কিশোর বাতায়ন</a></li>
+			<li><a target="blank"href="https://www.rokomari.com/book">রকমারি</a></li>
+			<li><a target="blank"href="http://www.vabantar.com/Books_Catagory.asp?bCata=1">বাংলা উপন্যাস </a></li>
+			<li><a target="blank" href="https://www.ebanglalibrary.com/">বাংলা লাইব্রেরি</a></li>
+		</ul>
+		</li>
+		<li><a target="blank" href="contact.html">CONTACT</a></li>
+	</ul>
+
+	</menu>
+</div>
+</nav>
+
+
+
+<div id="container">
+<div class="slider_container">
+
+<div class="sliderItems active"><img src="2018-11-08 16.33.11.jpg"/>
+<h1 style="color:#ffd7d7;text-align:center;margin-top:-500px;">WELCOME TO MY WEBSITE</h1></div>
+<div class="sliderItems"><img src="20181107_172601-1.jpg"/>
+<h1 style="color:#ffd7d7;text-align:center;margin-top:-500px;">MY NAME IS MEHERAJ</h1></div>
+<div class="sliderItems"><img src="20181107_173114.jpg"/>
+<h1 style="color:#ffd7d7;text-align:center;margin-top:-700px;">I AM LARNING TO WEB DEVELOPMENT</h1></div>
+<div class="sliderItems"><img src="2018-11-08 16.18.51.jpg"/>
+<h1 style="color:#ffd7d7;text-align:center;margin-top:-600px;">I AM A STUDENT</h1></div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+setInterval(function(){
+
+
+
+
+if(document.getElementsByClassName("sliderItems")[0].classList.contains("active")){
+
+document.getElementsByClassName("sliderItems")[1].classList.add("active");
+document.getElementsByClassName("sliderItems")[0].classList.remove("active");
+
+
+
+}else if(document.getElementsByClassName("sliderItems")[1].classList.contains("active")){
+
+document.getElementsByClassName("sliderItems")[2].classList.add("active");
+document.getElementsByClassName("sliderItems")[1].classList.remove("active");
+
+
+
+
+
+}else if(document.getElementsByClassName("sliderItems")[2].classList.contains("active")){
+
+document.getElementsByClassName("sliderItems")[3].classList.add("active");
+document.getElementsByClassName("sliderItems")[2].classList.remove("active");
+
+}else if(document.getElementsByClassName("sliderItems")[3].classList.contains("active")){
+
+document.getElementsByClassName("sliderItems")[0].classList.add("active");
+document.getElementsByClassName("sliderItems")[3].classList.remove("active");
+
+}
+
+
+
+
+},5000);
+
+
+
+
+
+
+
+</script>
+
+
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
